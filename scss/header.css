@@ -1,0 +1,219 @@
+/* Mobile First View */
+.header {
+  display: -ms-grid;
+  display: grid;
+  height: 80px;
+  width: 100%;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.header .logo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  height: 30px;
+  width: 100px;
+  margin: auto;
+}
+
+.header .logo #logo {
+  width: 100%;
+  height: 100%;
+}
+
+.header .logo:hover {
+  cursor: pointer;
+}
+
+.header .icon {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 2;
+  grid-column: 7/9;
+  margin: auto;
+}
+
+.header .icon .hamburgerIcon {
+  width: 30px;
+  height: 25px;
+}
+
+.header .icon .hamburgerIcon:hover #navWrapper {
+  display: block;
+}
+
+.header .icon:hover {
+  cursor: pointer;
+}
+
+#desktopNav {
+  display: none;
+}
+
+.searchContainer {
+  display: none;
+}
+
+#navWrapper {
+  display: block;
+  -ms-grid-columns: (1fr)[9];
+      grid-template-columns: repeat(9, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  position: fixed;
+  top: 79px;
+  z-index: 98;
+  width: 100%;
+  margin-top: -2000px;
+}
+
+#navWrapper nav {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 9;
+  grid-column: 1/10;
+  height: 390px;
+  font-size: .7em;
+  font-weight: bold;
+  background-color: white;
+  -webkit-box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+  -webkit-animation: navTransition .4s linear 1;
+          animation: navTransition .4s linear 1;
+  border-top: 3px solid #1dc1c1;
+}
+
+@-webkit-keyframes navTransition {
+  0% {
+    -webkit-transform: translateY(-700px);
+            transform: translateY(-700px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes navTransition {
+  0% {
+    -webkit-transform: translateY(-700px);
+            transform: translateY(-700px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+#navWrapper nav ul {
+  padding: 10px;
+}
+
+#navWrapper nav ul a {
+  display: block;
+  height: 28px;
+  line-height: 35px;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  color: #777;
+}
+
+#navWrapper nav ul a:hover {
+  color: #e38f84;
+}
+
+#navWrapper nav ul a li {
+  width: 100%;
+}
+
+#navWrapper nav ul .title_li {
+  padding-left: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .header .logo {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .header .icon {
+    display: none;
+  }
+  #desktopNav {
+    display: block;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+    grid-column: 3/6;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    margin: auto;
+  }
+  #desktopNav ul .desktop_li {
+    display: inline-block;
+    padding: 10px;
+  }
+  #desktopNav ul .desktop_li a {
+    text-decoration: none;
+    color: black;
+  }
+  #desktopNav ul .desktop_li a:hover {
+    color: #f05959d8;
+  }
+  .searchContainer {
+    display: block;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 3;
+    grid-column: 6/9;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    margin: auto;
+  }
+  .searchContainer .searchBox {
+    height: 34px;
+    width: 200px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid black;
+    outline: 0;
+  }
+  .searchContainer ::-webkit-input-placeholder {
+    padding-left: 12px;
+    color: #f05959d8;
+  }
+  .searchContainer :-ms-input-placeholder {
+    padding-left: 12px;
+    color: #f05959d8;
+  }
+  .searchContainer ::-ms-input-placeholder {
+    padding-left: 12px;
+    color: #f05959d8;
+  }
+  .searchContainer ::placeholder {
+    padding-left: 12px;
+    color: #f05959d8;
+  }
+  .searchContainer .search {
+    height: 36px;
+    width: 40px;
+    border-radius: 0 5px 5px 0;
+    background: none;
+    border: 1px solid black;
+    margin-left: -5.5px;
+    outline: 0;
+  }
+  .searchContainer .search img {
+    width: 35%;
+    height: 35%;
+  }
+  .searchContainer .search:hover {
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,92 @@
+//Fix for grid structure 
+@mixin positionFix {
+    position: relative;
+    top: 80px;
+}
+
+//button style
+@mixin buttonStyle {    
+    width: 150px;
+    height: 50px;
+    font-size: 1.45em;
+    color: white;
+    border-radius: 5px;
+    margin: auto;
+}
+
+@mixin directionBtn {
+    height: 40px;
+    width: 40px;
+    background-color: rgba(0,0,0,0.3);
+    border: 0.5px solid black;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #e38f8450;
+    z-index: 5;
+    padding: 5px;
+}
+
+//mixin adding style and animation
+@mixin enlarge {        
+    animation: animate .5s linear 1;
+    @keyframes animate {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.5);
+        }
+        100% {
+            transform: scale(1);
+        }                        
+    }
+}
+
+//icons and text
+@mixin iconsAndText {
+    padding-top: 25px;
+    height: 50px;
+    width: 165px;
+    .icon {
+        height: 100%;
+        width: 40%;
+    }
+}
+
+//padding
+@mixin padding {        
+    p {
+        padding: 0 40px;
+    }
+}
+
+//team positioning
+@mixin teamPositioning {
+    hr {
+        margin: 10px 0 10px 10px;
+        width: 50%;
+    }
+    &:hover {        
+        hr {
+            margin: 10px 0 10px 10px;
+            width: 70%;        
+        }
+    }
+    .teamMemberName {
+        padding: 10px;
+    }
+    .teamMemberPosition {
+        padding: 10px;
+    }
+    .teamMemberDetails {
+        padding: 20px 30px 20px 10px;
+        font-size: .6em;
+        line-height: 1.5em;
+    }
+}
+//image Sizing
+@mixin imageSizing {        
+    height: 150px;
+    width: 150px;
+    padding: 0;
+    margin-top: 60px;
+}

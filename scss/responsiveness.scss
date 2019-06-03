@@ -1,0 +1,853 @@
+// Partial Styling
+@import 'mixins';
+
+// Tab View Responsiveness
+@media only screen and (min-width: 768px) {
+//Introduction container
+.sliderContainer {
+    display: grid;
+    height: 350px;
+    @include positionFix;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 0;
+    //Introduction box
+    .sliderText {
+        grid-column: 2/5;
+        grid-row: 1/6;
+    }
+    #sc_btn {
+        grid-column: 2/5;
+        grid-row: 4/5;
+    }
+}
+
+//whoAreWe - Section
+.whoAreWeContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    height: 400px;
+    @include positionFix;
+    .whoAreWeText {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        height: 350px;
+        text-align: left;
+        #rm_btn {
+            margin: auto;            
+        }
+    }
+    .whoAreWe_images {        
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
+
+//iconSection container
+.iconSectionContainer {
+    display: grid;
+    height: 900px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+    padding: 0;
+    //iconSection
+    .iconSection, .iconSectionText {
+        display: grid;
+        width: 200px;
+        font-size: 14px;
+        padding: 10px 20px 40px 20px;
+        margin: auto;
+    }
+    //screen only
+    .screen {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 50%;
+    }
+    #screen_div {
+        @include iconsAndText;
+    }
+    .screenText {
+        @include padding;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    //speaker only
+    .speaker {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 50%;
+    }
+    #speaker_div {
+        @include iconsAndText;
+    }
+    .speakerText {
+        @include padding;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    //spanner only
+    .spanner {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        width: 50%;
+    }
+    #spanner_div {
+        @include iconsAndText;
+    }
+    .spannerText {
+        @include padding;
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    //document only
+    .document {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        width: 50%;
+    }
+    #document_div {
+        @include iconsAndText;
+    }
+    .documentText {
+        @include padding;
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+}
+
+//portfolioSection container
+.portfolioSectionContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 700px;
+    @include positionFix;
+    .portfolioSectionText {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-align: left;
+        padding: 0px 20px 20px 20px;
+        height: 300px;
+        h3 {
+            padding: 50px 0 50px 30px;
+        }
+    }
+    //images alignment
+    .portfolioSectionImages {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        #image1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            height: 200px;
+        }
+        #image2 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            height: 200px;
+        }
+        #image3 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            height: 200px;
+        }
+        #image4 {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            height: 200px;
+        }
+    }
+    #largeImage {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        height: 300px;
+    }
+}
+
+//meet our team - section
+.teamSectionContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 1550px;
+    padding-bottom: 30px;
+    @include positionFix;
+    .teamSectionText {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        text-align: left;
+        padding: 40px 20px 20px 20px;
+        h3 {
+            padding-left: 150px;
+        }
+        p {
+            padding: 10px 150px 0 150px;
+            font-size: .9em;
+            line-height: 20px;
+        }
+    }
+    //team member one
+    .photoOne {        
+        grid-column: 1/2;
+        grid-row: 2/3;
+        @include imageSizing;
+    }
+    .infoOne {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-size: 1.5em;
+        padding: 50px 0 0 65px;
+        text-align: left;
+        @include teamPositioning;
+    }
+    //team member two
+    .photoTwo {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        @include imageSizing;
+    }
+    .infoTwo {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        font-size: 1.5em;
+        padding: 50px 0 0 65px;
+        text-align: left;
+        @include teamPositioning;
+    }
+    //team member three
+    .photoThree {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        @include imageSizing;
+    }
+    .infoThree {
+        grid-column: 2/3;
+        grid-row: 4/5;
+        font-size: 1.5em;
+        padding: 50px 0 0 65px;
+        text-align: left;
+        @include teamPositioning;        
+    }
+    //team member four
+    .photoFour {
+        grid-column: 2/3;
+        grid-row: 5/6;
+        @include imageSizing;
+    }
+    .infoFour {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        font-size: 1.5em;
+        padding: 50px 0 0 65px;
+        text-align: left;
+        @include teamPositioning;
+    }
+}
+
+//counter section
+.counterContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    height: 150px;
+    @include positionFix;
+    padding: 0;
+    .cofees {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .girls {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .projects {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .hours {
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+}
+
+    /*  ABOUT PAGE */
+    .aboutUsContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 900px;
+        @include positionFix;
+        text-align: justify;
+        .aboutUs {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            padding: 40px 20px 0 60px;
+            h3 {
+                padding-bottom: 30px;
+            }
+            p {
+                padding-left: 0;
+            }
+        }
+        //Attraction Image 
+        .aboutImage {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            height: 100%;
+            width: 100%;
+        }
+        //Who We Are - Section
+        .about {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            height: 500px;
+
+            .heading {
+                padding: 20px 0 40px 20px;
+            }
+            p {
+                font-size: .7em;
+            }
+        }
+        .us {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    //stats counter section
+    .statsContainer {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        height: 200px;
+        @include positionFix;
+        background-color: black;
+        padding: 50px 0 20px 0;
+        .counter {
+            height: 400px;
+            margin: auto;
+            width: 120px;
+            height: 120px;
+            padding: 5px;
+            color: white;
+            text-align: center;
+            .p_style {
+                padding-top: 10px;
+                font-size: .8em;
+            }
+        }
+        .statsOne {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        .statsTwo {
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+        .statsThree{
+            grid-column: 4/5;
+            grid-row: 1/2;
+        }
+        .statsFour {
+            grid-column: 5/6;
+            grid-row: 1/2;
+        }
+    }
+
+
+    /*  PORTFOLIO PAGE  */
+    .lightbox_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 50px;
+        @include positionFix;
+        border-bottom: 0.5px solid #e38f84;
+        .lightbox {
+            grid-column: 1/4;
+            grid-row: 1/2;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 70px 1fr 70px;
+            grid-template-rows: repeat(2, 1fr);
+            .direction {
+                @include directionBtn;
+                background-color: #e38f8470;
+                margin: auto;
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgba(0,0,0, 0.2);
+                }
+            }
+            .left {
+                grid-column: 1/2;
+                grid-row: 1/3;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+            .right {
+                grid-column: 3/4;
+                grid-row: 1/3;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+            #images {
+                grid-column: 1/4;
+                grid-row: 1/3;
+                z-index: 1;
+                border-bottom: 1px solid #e38f8490;
+                .lb_images {
+                    margin: auto;
+                    height: 100%;
+                    width: 100%;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        ul {
+            grid-column: 1/4;
+            grid-row: 2/3;
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            .g_list {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 25px;
+                padding: 5px;
+                margin: 2px;
+                background-color: rgba(0,0,0, 0.5);
+                &:hover, :active, :focus {
+                    cursor: pointer;
+                    background-color: #e38f84;
+                    
+                }
+            }
+        }
+    }
+
+    //Hidden Window Container
+    .hiddenWindowContainer {
+        .hiddenWindowWrapper {
+            width: 60%;
+            height: 60%;
+            #img_holder {
+                height: 90%;
+            }
+        }
+    }
+    
+    /*  COURSES PAGE  */
+    // Shopping cart 
+    .shopping_container {
+        width: 45%;
+    }
+    .wrapper {
+        padding: 20px;
+        .courses {
+            height: 400px;
+            width: 600px;
+        }
+    }
+
+    /*  CONTACT PAGE  */
+    .formContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        height: 580px;
+        @include positionFix;
+        form {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            padding: 40px;
+            margin: 0;
+            .h_message {
+                text-align: left;
+            }
+        }
+        
+        .c_info_container {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            @include positionFix;
+            top: 18px;
+            .h_message {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                text-align: left;
+            }
+        }
+       
+        .mapContainer {
+            height: 400px;
+        }
+    }
+}
+
+
+// Desktop View Responsiveness
+@media only screen and (min-width: 1024px) {
+    //Introduction container
+    .sliderContainer {
+        display: grid;
+        height: 600px;
+        @include positionFix;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        //Introduction box
+        .sliderText {
+            grid-column: 2/6;
+            grid-row: 1/6;
+            padding-left: 150px;
+            padding-right: 150px;
+            font-size: 1.2em;
+        }
+
+    }
+
+    //whoAreWe - Section
+    .whoAreWeContainer {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        height: 420px;
+        padding: 30px;
+        @include positionFix;
+        .whoAreWeText {
+            grid-column: 2/4;
+            grid-row: 1/2;
+            padding-left: 0;
+            h3 {
+                    padding-left: 0;
+            }
+            h5 {
+                padding-left: 0;
+            }
+            p {
+                padding-left: 0;
+            }
+        }
+        .whoAreWe_images {        
+            grid-column: 4/6;
+            grid-row: 1/2;
+            grid-gap: 10px;
+        }
+    }
+
+    //iconSection container
+    .iconSectionContainer {
+        display: grid;
+        height: 470px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 100%;
+        padding: 0;
+        //iconSection
+        .iconSection, .iconSectionText {
+            display: grid;
+            width: 200px;
+            font-size: .9em;
+            padding: 25px 0 20px 0;
+            margin: auto;
+            margin-top: 0;
+            h3 {                
+                font-size: 1.35em;
+                padding: 0 20px;
+            }
+            p {        
+                font-size: .9em;
+                padding: 0 20px
+            }
+        }
+        //screen only
+        .screen {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            width: 150px;
+        }
+        #screen_div {
+            @include iconsAndText;
+            width: 100px;
+        }
+        .screenText {
+            @include padding;
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        //speaker only
+        .speaker {
+        grid-column: 3/4;
+            grid-row: 1/2;
+            width: 100px;
+        }
+        #speaker_div {
+            @include iconsAndText;
+            width: 100px;
+        }
+        .speakerText {
+            @include padding;
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        //spanner only
+        .spanner {
+            grid-column: 4/5;
+            grid-row: 1/2;
+            width: 100px;
+        }
+        #spanner_div {
+            @include iconsAndText;
+            width: 100px;
+        }
+        .spannerText {
+            @include padding;
+            grid-column: 4/5;
+            grid-row: 2/3;
+        }
+        //document only
+        .document {
+            grid-column: 5/6;
+            grid-row: 1/2;
+            width: 100px;
+        }
+        #document_div {
+            @include iconsAndText;
+            width: 100px;
+        }
+        .documentText {
+            @include padding;
+            grid-column: 5/6;
+            grid-row: 2/3;
+        }
+    }
+
+    //portfolioSection container
+    .portfolioSectionContainer {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 650px;
+        @include positionFix;
+        .portfolioSectionText {
+            grid-column: 2/6;
+            grid-row: 1/2;
+            text-align: left;
+            padding: 0px 50px 20px 0;
+            height: 300px;
+            h3 {
+                padding: 50px 0 0 0;
+            }
+            p {
+                padding-left: 0;
+            }
+        }
+        //images alignment
+        .portfolioSectionImages {
+            grid-column: 2/4;
+            grid-row: 2/3;
+            height: 200px;
+            grid-gap: 10px;
+            #image1 {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                height: 150px;
+            }
+            #image2 {
+                grid-column: 2/3;
+                grid-row: 1/2;
+                height: 150px;
+            }
+            #image3 {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                height: 150px;
+            }
+            #image4 {
+                grid-column: 2/3;
+                grid-row: 2/3;
+                height: 150px;
+            }
+        }
+        #largeImage {
+            grid-column: 4/6;
+            grid-row: 2/3;
+            height: 310px;
+            width: 100%;
+            margin-left: 10px
+        }
+    }
+
+    //meet our team - section
+    .teamSectionContainer {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        height: 1750px;
+        padding-bottom: 30px;
+        @include positionFix;
+        margin-top: -300px;
+        .teamSectionText {
+            grid-column: 2/6;
+            grid-row: 1/2;
+            text-align: left;
+            padding: 40px 0 20px 0;
+            margin-top: 300px;
+            h3 {
+                padding-left: 0;
+            }
+            p {
+                padding: 10px 50px 0 0;
+                font-size: .9em;
+                line-height: 20px;
+            }
+        }
+        //team member one
+        .photoOne {        
+            grid-column: 2/3;
+            grid-row: 2/3;
+            @include imageSizing;
+            .teamImages {
+                height: 150px;
+                width: 150px;
+            }
+        }
+        .infoOne {
+            grid-column: 3/4;
+            grid-row: 2/3;
+            padding: 50px 0 0 15px;
+            text-align: left;
+            @include teamPositioning;
+        }
+        //team member two
+        .photoTwo {
+            grid-column: 4/5;
+            grid-row: 2/3;
+            @include imageSizing;
+            .teamImages {
+                height: 150px;
+                width: 150px;
+            }
+        }
+        .infoTwo {
+            grid-column: 5/6;
+            grid-row: 2/3;
+            padding: 50px 0 0 15px;
+            text-align: left;
+            @include teamPositioning;
+        }
+        //team member three
+        .photoThree {
+            grid-column: 2/3;
+            grid-row: 3/4;
+            @include imageSizing;
+            .teamImages {
+                height: 150px;
+                width: 150px;
+            }
+        }
+        .infoThree {
+            grid-column: 3/4;
+            grid-row: 3/4;
+            padding: 50px 0 0 15px;
+            text-align: left;
+            @include teamPositioning;        
+        }
+        //team member four
+        .photoFour {
+            grid-column: 4/5;
+            grid-row: 3/4;
+            @include imageSizing;
+            .teamImages {
+                height: 150px;
+                width: 150px;
+            }
+        }
+        .infoFour {
+            grid-column: 5/6;
+            grid-row: 3/4;
+            padding: 50px 0 0 15px;
+            text-align: left;
+            @include teamPositioning;
+        }
+    }
+
+    //counter section
+    .counterContainer {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        height: 200px;
+        @include positionFix;
+        padding: 0;
+        .counter {
+        font-size: 1em;
+        }
+        .counterCoffees {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        .counterGirls {
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+        .counterProjects {
+            grid-column: 4/5;
+            grid-row: 1/2;
+        }
+        .counterHours {
+            grid-column: 5/6;
+            grid-row: 1/2;
+        }
+    }
+
+
+    /*PORTFOLIO PAGE */
+    //Hidden Window Container
+    .hiddenWindowContainer {
+        .hiddenWindowWrapper {
+            width: 60%;
+            height: 70%;
+            #imageHolder {
+                height: 90%;
+            }
+        }
+    }
+   
+                
+       
+}
+
+//Laptop View Responsiveness
+@media only screen and (min-width: 1440px) {
+    //meet our team - section
+    .teamSectionContainer {
+        height: 1650px;
+        font-size: 1.2em;
+        .teamSection_text {
+            p {
+                font-size: 1em;
+            }
+        }
+    }
+    
+    // Shopping cart
+    .shoppingContainer {
+        width: 30%;
+    }
+}

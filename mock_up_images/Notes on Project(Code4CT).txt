@@ -1,0 +1,62 @@
+{5 pages total}
+homepage
+contact
+portfolio
+about
+courses
+
+navbar
+top left logo
+the logo represents the branding
+
+nav items
+homepage
+courses
+about
+portfolio
+contact
+
+just below that
+
+section
+who we are
+inro - - highlight
+
+in meet the team
+remove social media icons...
+
+
+headings
+cups of coffie 300+
+
+number of girls 780+
+
+projects completed 3120+
+
+hrs coding 8765+
+
+icons must have carousal functionality
+
+footer only three columns
+remove instagram widget
+
+google+
+linkedin
+facebook
+twitter
+
+about us page
+
+stats are in the impact page
+
+courses page
+design your own layout
+...
+
+portfolio page 
+hover in image--subtle hover effecdt
+
+
+contact form
+map
+contact details

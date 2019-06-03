@@ -1,0 +1,835 @@
+@media only screen and (min-width: 768px) {
+  .sliderContainer {
+    display: grid;
+    height: 350px;
+    position: relative;
+    top: 80px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 0; }
+    .sliderContainer .sliderText {
+      grid-column: 2/5;
+      grid-row: 1/6; }
+    .sliderContainer #sc_btn {
+      grid-column: 2/5;
+      grid-row: 4/5; }
+
+  .whoAreWeContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    height: 400px;
+    position: relative;
+    top: 80px; }
+    .whoAreWeContainer .whoAreWeText {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      height: 350px;
+      text-align: left; }
+      .whoAreWeContainer .whoAreWeText #rm_btn {
+        margin: auto; }
+    .whoAreWeContainer .whoAreWe_images {
+      grid-column: 1/2;
+      grid-row: 1/2; }
+
+  .iconSectionContainer {
+    display: grid;
+    height: 900px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+    padding: 0; }
+    .iconSectionContainer .iconSection, .iconSectionContainer .iconSectionText {
+      display: grid;
+      width: 200px;
+      font-size: 14px;
+      padding: 10px 20px 40px 20px;
+      margin: auto; }
+    .iconSectionContainer .screen {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      width: 50%; }
+    .iconSectionContainer #screen_div {
+      padding-top: 25px;
+      height: 50px;
+      width: 165px; }
+      .iconSectionContainer #screen_div .icon {
+        height: 100%;
+        width: 40%; }
+    .iconSectionContainer .screenText {
+      grid-column: 1/2;
+      grid-row: 2/3; }
+      .iconSectionContainer .screenText p {
+        padding: 0 40px; }
+    .iconSectionContainer .speaker {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      width: 50%; }
+    .iconSectionContainer #speaker_div {
+      padding-top: 25px;
+      height: 50px;
+      width: 165px; }
+      .iconSectionContainer #speaker_div .icon {
+        height: 100%;
+        width: 40%; }
+    .iconSectionContainer .speakerText {
+      grid-column: 2/3;
+      grid-row: 2/3; }
+      .iconSectionContainer .speakerText p {
+        padding: 0 40px; }
+    .iconSectionContainer .spanner {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      width: 50%; }
+    .iconSectionContainer #spanner_div {
+      padding-top: 25px;
+      height: 50px;
+      width: 165px; }
+      .iconSectionContainer #spanner_div .icon {
+        height: 100%;
+        width: 40%; }
+    .iconSectionContainer .spannerText {
+      grid-column: 1/2;
+      grid-row: 4/5; }
+      .iconSectionContainer .spannerText p {
+        padding: 0 40px; }
+    .iconSectionContainer .document {
+      grid-column: 2/3;
+      grid-row: 3/4;
+      width: 50%; }
+    .iconSectionContainer #document_div {
+      padding-top: 25px;
+      height: 50px;
+      width: 165px; }
+      .iconSectionContainer #document_div .icon {
+        height: 100%;
+        width: 40%; }
+    .iconSectionContainer .documentText {
+      grid-column: 2/3;
+      grid-row: 4/5; }
+      .iconSectionContainer .documentText p {
+        padding: 0 40px; }
+
+  .portfolioSectionContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 700px;
+    position: relative;
+    top: 80px; }
+    .portfolioSectionContainer .portfolioSectionText {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      text-align: left;
+      padding: 0px 20px 20px 20px;
+      height: 300px; }
+      .portfolioSectionContainer .portfolioSectionText h3 {
+        padding: 50px 0 50px 30px; }
+    .portfolioSectionContainer .portfolioSectionImages {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr); }
+      .portfolioSectionContainer .portfolioSectionImages #image1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 200px; }
+      .portfolioSectionContainer .portfolioSectionImages #image2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        height: 200px; }
+      .portfolioSectionContainer .portfolioSectionImages #image3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        height: 200px; }
+      .portfolioSectionContainer .portfolioSectionImages #image4 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        height: 200px; }
+    .portfolioSectionContainer #largeImage {
+      grid-column: 1/3;
+      grid-row: 2/3;
+      height: 300px; }
+
+  .teamSectionContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 1550px;
+    padding-bottom: 30px;
+    position: relative;
+    top: 80px; }
+    .teamSectionContainer .teamSectionText {
+      grid-column: 1/3;
+      grid-row: 1/2;
+      text-align: left;
+      padding: 40px 20px 20px 20px; }
+      .teamSectionContainer .teamSectionText h3 {
+        padding-left: 150px; }
+      .teamSectionContainer .teamSectionText p {
+        padding: 10px 150px 0 150px;
+        font-size: .9em;
+        line-height: 20px; }
+    .teamSectionContainer .photoOne {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      height: 150px;
+      width: 150px;
+      padding: 0;
+      margin-top: 60px; }
+    .teamSectionContainer .infoOne {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      font-size: 1.5em;
+      padding: 50px 0 0 65px;
+      text-align: left; }
+      .teamSectionContainer .infoOne hr {
+        margin: 10px 0 10px 10px;
+        width: 50%; }
+      .teamSectionContainer .infoOne:hover hr {
+        margin: 10px 0 10px 10px;
+        width: 70%; }
+      .teamSectionContainer .infoOne .teamMemberName {
+        padding: 10px; }
+      .teamSectionContainer .infoOne .teamMemberPosition {
+        padding: 10px; }
+      .teamSectionContainer .infoOne .teamMemberDetails {
+        padding: 20px 30px 20px 10px;
+        font-size: .6em;
+        line-height: 1.5em; }
+    .teamSectionContainer .photoTwo {
+      grid-column: 2/3;
+      grid-row: 3/4;
+      height: 150px;
+      width: 150px;
+      padding: 0;
+      margin-top: 60px; }
+    .teamSectionContainer .infoTwo {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      font-size: 1.5em;
+      padding: 50px 0 0 65px;
+      text-align: left; }
+      .teamSectionContainer .infoTwo hr {
+        margin: 10px 0 10px 10px;
+        width: 50%; }
+      .teamSectionContainer .infoTwo:hover hr {
+        margin: 10px 0 10px 10px;
+        width: 70%; }
+      .teamSectionContainer .infoTwo .teamMemberName {
+        padding: 10px; }
+      .teamSectionContainer .infoTwo .teamMemberPosition {
+        padding: 10px; }
+      .teamSectionContainer .infoTwo .teamMemberDetails {
+        padding: 20px 30px 20px 10px;
+        font-size: .6em;
+        line-height: 1.5em; }
+    .teamSectionContainer .photoThree {
+      grid-column: 1/2;
+      grid-row: 4/5;
+      height: 150px;
+      width: 150px;
+      padding: 0;
+      margin-top: 60px; }
+    .teamSectionContainer .infoThree {
+      grid-column: 2/3;
+      grid-row: 4/5;
+      font-size: 1.5em;
+      padding: 50px 0 0 65px;
+      text-align: left; }
+      .teamSectionContainer .infoThree hr {
+        margin: 10px 0 10px 10px;
+        width: 50%; }
+      .teamSectionContainer .infoThree:hover hr {
+        margin: 10px 0 10px 10px;
+        width: 70%; }
+      .teamSectionContainer .infoThree .teamMemberName {
+        padding: 10px; }
+      .teamSectionContainer .infoThree .teamMemberPosition {
+        padding: 10px; }
+      .teamSectionContainer .infoThree .teamMemberDetails {
+        padding: 20px 30px 20px 10px;
+        font-size: .6em;
+        line-height: 1.5em; }
+    .teamSectionContainer .photoFour {
+      grid-column: 2/3;
+      grid-row: 5/6;
+      height: 150px;
+      width: 150px;
+      padding: 0;
+      margin-top: 60px; }
+    .teamSectionContainer .infoFour {
+      grid-column: 1/2;
+      grid-row: 5/6;
+      font-size: 1.5em;
+      padding: 50px 0 0 65px;
+      text-align: left; }
+      .teamSectionContainer .infoFour hr {
+        margin: 10px 0 10px 10px;
+        width: 50%; }
+      .teamSectionContainer .infoFour:hover hr {
+        margin: 10px 0 10px 10px;
+        width: 70%; }
+      .teamSectionContainer .infoFour .teamMemberName {
+        padding: 10px; }
+      .teamSectionContainer .infoFour .teamMemberPosition {
+        padding: 10px; }
+      .teamSectionContainer .infoFour .teamMemberDetails {
+        padding: 20px 30px 20px 10px;
+        font-size: .6em;
+        line-height: 1.5em; }
+
+  .counterContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    height: 150px;
+    position: relative;
+    top: 80px;
+    padding: 0; }
+    .counterContainer .cofees {
+      grid-column: 1/2;
+      grid-row: 1/2; }
+    .counterContainer .girls {
+      grid-column: 2/3;
+      grid-row: 1/2; }
+    .counterContainer .projects {
+      grid-column: 3/4;
+      grid-row: 1/2; }
+    .counterContainer .hours {
+      grid-column: 4/5;
+      grid-row: 1/2; }
+
+  /*  ABOUT PAGE */
+  .aboutUsContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 900px;
+    position: relative;
+    top: 80px;
+    text-align: justify; }
+    .aboutUsContainer .aboutUs {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      padding: 40px 20px 0 60px; }
+      .aboutUsContainer .aboutUs h3 {
+        padding-bottom: 30px; }
+      .aboutUsContainer .aboutUs p {
+        padding-left: 0; }
+    .aboutUsContainer .aboutImage {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      height: 100%;
+      width: 100%; }
+    .aboutUsContainer .about {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      height: 500px; }
+      .aboutUsContainer .about .heading {
+        padding: 20px 0 40px 20px; }
+      .aboutUsContainer .about p {
+        font-size: .7em; }
+    .aboutUsContainer .us {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      height: 100%;
+      width: 100%; }
+
+  .statsContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    height: 200px;
+    position: relative;
+    top: 80px;
+    background-color: black;
+    padding: 50px 0 20px 0; }
+    .statsContainer .counter {
+      height: 400px;
+      margin: auto;
+      width: 120px;
+      height: 120px;
+      padding: 5px;
+      color: white;
+      text-align: center; }
+      .statsContainer .counter .p_style {
+        padding-top: 10px;
+        font-size: .8em; }
+    .statsContainer .statsOne {
+      grid-column: 2/3;
+      grid-row: 1/2; }
+    .statsContainer .statsTwo {
+      grid-column: 3/4;
+      grid-row: 1/2; }
+    .statsContainer .statsThree {
+      grid-column: 4/5;
+      grid-row: 1/2; }
+    .statsContainer .statsFour {
+      grid-column: 5/6;
+      grid-row: 1/2; }
+
+  /*  PORTFOLIO PAGE  */
+  .lightbox_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 50px;
+    position: relative;
+    top: 80px;
+    border-bottom: 0.5px solid #e38f84; }
+    .lightbox_container .lightbox {
+      grid-column: 1/4;
+      grid-row: 1/2;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 70px 1fr 70px;
+      grid-template-rows: repeat(2, 1fr); }
+      .lightbox_container .lightbox .direction {
+        height: 40px;
+        width: 40px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 0.5px solid black;
+        border-radius: 25px;
+        box-shadow: 0 0 10px #e38f8450;
+        z-index: 5;
+        padding: 5px;
+        background-color: #e38f8470;
+        margin: auto; }
+        .lightbox_container .lightbox .direction:hover {
+          cursor: pointer;
+          background-color: rgba(0, 0, 0, 0.2); }
+      .lightbox_container .lightbox .left {
+        grid-column: 1/2;
+        grid-row: 1/3; }
+        .lightbox_container .lightbox .left img {
+          height: 100%;
+          width: 100%;
+          margin: auto; }
+      .lightbox_container .lightbox .right {
+        grid-column: 3/4;
+        grid-row: 1/3; }
+        .lightbox_container .lightbox .right img {
+          height: 100%;
+          width: 100%;
+          margin: auto; }
+      .lightbox_container .lightbox #images {
+        grid-column: 1/4;
+        grid-row: 1/3;
+        z-index: 1;
+        border-bottom: 1px solid #e38f8490; }
+        .lightbox_container .lightbox #images .lb_images {
+          margin: auto;
+          height: 100%;
+          width: 100%; }
+          .lightbox_container .lightbox #images .lb_images img {
+            height: 100%;
+            width: 100%; }
+    .lightbox_container ul {
+      grid-column: 1/4;
+      grid-row: 2/3;
+      width: 100%;
+      text-align: center;
+      margin: auto; }
+      .lightbox_container ul .g_list {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 25px;
+        padding: 5px;
+        margin: 2px;
+        background-color: rgba(0, 0, 0, 0.5); }
+        .lightbox_container ul .g_list:hover, .lightbox_container ul .g_list :active, .lightbox_container ul .g_list :focus {
+          cursor: pointer;
+          background-color: #e38f84; }
+
+  .hiddenWindowContainer .hiddenWindowWrapper {
+    width: 60%;
+    height: 60%; }
+    .hiddenWindowContainer .hiddenWindowWrapper #img_holder {
+      height: 90%; }
+
+  /*  COURSES PAGE  */
+  .shopping_container {
+    width: 45%; }
+
+  .wrapper {
+    padding: 20px; }
+    .wrapper .courses {
+      height: 400px;
+      width: 600px; }
+
+  /*  CONTACT PAGE  */
+  .formContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    height: 580px;
+    position: relative;
+    top: 80px; }
+    .formContainer form {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      padding: 40px;
+      margin: 0; }
+      .formContainer form .h_message {
+        text-align: left; }
+    .formContainer .c_info_container {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      position: relative;
+      top: 80px;
+      top: 18px; }
+      .formContainer .c_info_container .h_message {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-align: left; }
+    .formContainer .mapContainer {
+      height: 400px; } }
+@media only screen and (min-width: 1024px) {
+  .sliderContainer {
+    display: grid;
+    height: 600px;
+    position: relative;
+    top: 80px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr); }
+    .sliderContainer .sliderText {
+      grid-column: 2/6;
+      grid-row: 1/6;
+      padding-left: 150px;
+      padding-right: 150px;
+      font-size: 1.2em; }
+
+  .whoAreWeContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 420px;
+    padding: 30px;
+    position: relative;
+    top: 80px; }
+    .whoAreWeContainer .whoAreWeText {
+      grid-column: 2/4;
+      grid-row: 1/2;
+      padding-left: 0; }
+      .whoAreWeContainer .whoAreWeText h3 {
+        padding-left: 0; }
+      .whoAreWeContainer .whoAreWeText h5 {
+        padding-left: 0; }
+      .whoAreWeContainer .whoAreWeText p {
+        padding-left: 0; }
+    .whoAreWeContainer .whoAreWe_images {
+      grid-column: 4/6;
+      grid-row: 1/2;
+      grid-gap: 10px; }
+
+  .iconSectionContainer {
+    display: grid;
+    height: 470px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    padding: 0; }
+    .iconSectionContainer .iconSection, .iconSectionContainer .iconSectionText {
+      display: grid;
+      width: 200px;
+      font-size: .9em;
+      padding: 25px 0 20px 0;
+      margin: auto;
+      margin-top: 0; }
+      .iconSectionContainer .iconSection h3, .iconSectionContainer .iconSectionText h3 {
+        font-size: 1.35em;
+        padding: 0 20px; }
+      .iconSectionContainer .iconSection p, .iconSectionContainer .iconSectionText p {
+        font-size: .9em;
+        padding: 0 20px; }
+    .iconSectionContainer .screen {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      width: 150px; }
+    .iconSectionContainer #screen_div {
+      padding-top: 25px;
+      height: 50px;
+      width: 165px;
+      width: 100px; }
+      .iconSectionContainer #screen_div .icon {
+        height: 100%;
+        width: 40%; }
+    .iconSectionContainer .screenText {
+      grid-column: 2/3;
+      grid-row: 2/3; }
+      .iconSectionContainer .screenText p {
+        padding: 0 40px; }
+    .iconSectionContainer .speaker {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      width: 100px; }
+    .iconSectionContainer #speaker_div {
+      padding-top: 25px;
+      height: 50px;
+      width: 165px;
+      width: 100px; }
+      .iconSectionContainer #speaker_div .icon {
+        height: 100%;
+        width: 40%; }
+    .iconSectionContainer .speakerText {
+      grid-column: 3/4;
+      grid-row: 2/3; }
+      .iconSectionContainer .speakerText p {
+        padding: 0 40px; }
+    .iconSectionContainer .spanner {
+      grid-column: 4/5;
+      grid-row: 1/2;
+      width: 100px; }
+    .iconSectionContainer #spanner_div {
+      padding-top: 25px;
+      height: 50px;
+      width: 165px;
+      width: 100px; }
+      .iconSectionContainer #spanner_div .icon {
+        height: 100%;
+        width: 40%; }
+    .iconSectionContainer .spannerText {
+      grid-column: 4/5;
+      grid-row: 2/3; }
+      .iconSectionContainer .spannerText p {
+        padding: 0 40px; }
+    .iconSectionContainer .document {
+      grid-column: 5/6;
+      grid-row: 1/2;
+      width: 100px; }
+    .iconSectionContainer #document_div {
+      padding-top: 25px;
+      height: 50px;
+      width: 165px;
+      width: 100px; }
+      .iconSectionContainer #document_div .icon {
+        height: 100%;
+        width: 40%; }
+    .iconSectionContainer .documentText {
+      grid-column: 5/6;
+      grid-row: 2/3; }
+      .iconSectionContainer .documentText p {
+        padding: 0 40px; }
+
+  .portfolioSectionContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 650px;
+    position: relative;
+    top: 80px; }
+    .portfolioSectionContainer .portfolioSectionText {
+      grid-column: 2/6;
+      grid-row: 1/2;
+      text-align: left;
+      padding: 0px 50px 20px 0;
+      height: 300px; }
+      .portfolioSectionContainer .portfolioSectionText h3 {
+        padding: 50px 0 0 0; }
+      .portfolioSectionContainer .portfolioSectionText p {
+        padding-left: 0; }
+    .portfolioSectionContainer .portfolioSectionImages {
+      grid-column: 2/4;
+      grid-row: 2/3;
+      height: 200px;
+      grid-gap: 10px; }
+      .portfolioSectionContainer .portfolioSectionImages #image1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 150px; }
+      .portfolioSectionContainer .portfolioSectionImages #image2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        height: 150px; }
+      .portfolioSectionContainer .portfolioSectionImages #image3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        height: 150px; }
+      .portfolioSectionContainer .portfolioSectionImages #image4 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        height: 150px; }
+    .portfolioSectionContainer #largeImage {
+      grid-column: 4/6;
+      grid-row: 2/3;
+      height: 310px;
+      width: 100%;
+      margin-left: 10px; }
+
+  .teamSectionContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 1750px;
+    padding-bottom: 30px;
+    position: relative;
+    top: 80px;
+    margin-top: -300px; }
+    .teamSectionContainer .teamSectionText {
+      grid-column: 2/6;
+      grid-row: 1/2;
+      text-align: left;
+      padding: 40px 0 20px 0;
+      margin-top: 300px; }
+      .teamSectionContainer .teamSectionText h3 {
+        padding-left: 0; }
+      .teamSectionContainer .teamSectionText p {
+        padding: 10px 50px 0 0;
+        font-size: .9em;
+        line-height: 20px; }
+    .teamSectionContainer .photoOne {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      height: 150px;
+      width: 150px;
+      padding: 0;
+      margin-top: 60px; }
+      .teamSectionContainer .photoOne .teamImages {
+        height: 150px;
+        width: 150px; }
+    .teamSectionContainer .infoOne {
+      grid-column: 3/4;
+      grid-row: 2/3;
+      padding: 50px 0 0 15px;
+      text-align: left; }
+      .teamSectionContainer .infoOne hr {
+        margin: 10px 0 10px 10px;
+        width: 50%; }
+      .teamSectionContainer .infoOne:hover hr {
+        margin: 10px 0 10px 10px;
+        width: 70%; }
+      .teamSectionContainer .infoOne .teamMemberName {
+        padding: 10px; }
+      .teamSectionContainer .infoOne .teamMemberPosition {
+        padding: 10px; }
+      .teamSectionContainer .infoOne .teamMemberDetails {
+        padding: 20px 30px 20px 10px;
+        font-size: .6em;
+        line-height: 1.5em; }
+    .teamSectionContainer .photoTwo {
+      grid-column: 4/5;
+      grid-row: 2/3;
+      height: 150px;
+      width: 150px;
+      padding: 0;
+      margin-top: 60px; }
+      .teamSectionContainer .photoTwo .teamImages {
+        height: 150px;
+        width: 150px; }
+    .teamSectionContainer .infoTwo {
+      grid-column: 5/6;
+      grid-row: 2/3;
+      padding: 50px 0 0 15px;
+      text-align: left; }
+      .teamSectionContainer .infoTwo hr {
+        margin: 10px 0 10px 10px;
+        width: 50%; }
+      .teamSectionContainer .infoTwo:hover hr {
+        margin: 10px 0 10px 10px;
+        width: 70%; }
+      .teamSectionContainer .infoTwo .teamMemberName {
+        padding: 10px; }
+      .teamSectionContainer .infoTwo .teamMemberPosition {
+        padding: 10px; }
+      .teamSectionContainer .infoTwo .teamMemberDetails {
+        padding: 20px 30px 20px 10px;
+        font-size: .6em;
+        line-height: 1.5em; }
+    .teamSectionContainer .photoThree {
+      grid-column: 2/3;
+      grid-row: 3/4;
+      height: 150px;
+      width: 150px;
+      padding: 0;
+      margin-top: 60px; }
+      .teamSectionContainer .photoThree .teamImages {
+        height: 150px;
+        width: 150px; }
+    .teamSectionContainer .infoThree {
+      grid-column: 3/4;
+      grid-row: 3/4;
+      padding: 50px 0 0 15px;
+      text-align: left; }
+      .teamSectionContainer .infoThree hr {
+        margin: 10px 0 10px 10px;
+        width: 50%; }
+      .teamSectionContainer .infoThree:hover hr {
+        margin: 10px 0 10px 10px;
+        width: 70%; }
+      .teamSectionContainer .infoThree .teamMemberName {
+        padding: 10px; }
+      .teamSectionContainer .infoThree .teamMemberPosition {
+        padding: 10px; }
+      .teamSectionContainer .infoThree .teamMemberDetails {
+        padding: 20px 30px 20px 10px;
+        font-size: .6em;
+        line-height: 1.5em; }
+    .teamSectionContainer .photoFour {
+      grid-column: 4/5;
+      grid-row: 3/4;
+      height: 150px;
+      width: 150px;
+      padding: 0;
+      margin-top: 60px; }
+      .teamSectionContainer .photoFour .teamImages {
+        height: 150px;
+        width: 150px; }
+    .teamSectionContainer .infoFour {
+      grid-column: 5/6;
+      grid-row: 3/4;
+      padding: 50px 0 0 15px;
+      text-align: left; }
+      .teamSectionContainer .infoFour hr {
+        margin: 10px 0 10px 10px;
+        width: 50%; }
+      .teamSectionContainer .infoFour:hover hr {
+        margin: 10px 0 10px 10px;
+        width: 70%; }
+      .teamSectionContainer .infoFour .teamMemberName {
+        padding: 10px; }
+      .teamSectionContainer .infoFour .teamMemberPosition {
+        padding: 10px; }
+      .teamSectionContainer .infoFour .teamMemberDetails {
+        padding: 20px 30px 20px 10px;
+        font-size: .6em;
+        line-height: 1.5em; }
+
+  .counterContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    height: 200px;
+    position: relative;
+    top: 80px;
+    padding: 0; }
+    .counterContainer .counter {
+      font-size: 1em; }
+    .counterContainer .counterCoffees {
+      grid-column: 2/3;
+      grid-row: 1/2; }
+    .counterContainer .counterGirls {
+      grid-column: 3/4;
+      grid-row: 1/2; }
+    .counterContainer .counterProjects {
+      grid-column: 4/5;
+      grid-row: 1/2; }
+    .counterContainer .counterHours {
+      grid-column: 5/6;
+      grid-row: 1/2; }
+
+  /*PORTFOLIO PAGE */
+  .hiddenWindowContainer .hiddenWindowWrapper {
+    width: 60%;
+    height: 70%; }
+    .hiddenWindowContainer .hiddenWindowWrapper #imageHolder {
+      height: 90%; } }
+@media only screen and (min-width: 1440px) {
+  .teamSectionContainer {
+    height: 1650px;
+    font-size: 1.2em; }
+    .teamSectionContainer .teamSection_text p {
+      font-size: 1em; }
+
+  .shoppingContainer {
+    width: 30%; } }
+
+/*# sourceMappingURL=responsiveness.css.map */
